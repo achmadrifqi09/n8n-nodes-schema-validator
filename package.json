@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-schema-validator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An n8n community node for validating input data against a configurable schema.",
   "keywords": [
     "n8n-community-node-package"
@@ -42,15 +42,15 @@
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "@types/node": "^22.0.0",
-    "eslint": "^10.4.0",
+    "eslint": "^9.32.0",
     "jest": "^30.4.2",
     "n8n-workflow": "^2.16.0",
     "ts-jest": "^29.4.10",
-    "typescript": "^6.0.0",
+    "typescript": "^5.9.2",
     "typescript-eslint": "^8.60.0"
   },
   "peerDependencies": {
-    "n8n-workflow": ">=2.0.0"
+    "n8n-workflow": "*"
   },
   "dependencies": {
     "zod": "^4.4.3"
