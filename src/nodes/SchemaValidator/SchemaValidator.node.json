@@ -1,0 +1,10 @@
+{
+  "node": "n8n-nodes-schema-validator.schemaValidator",
+  "nodeDisplayName": "Schema Validator",
+  "codex": {
+    "categories": ["Data Transformation"],
+    "resources": {
+      "primaryDocumentation": []
+    }
+  }
+}

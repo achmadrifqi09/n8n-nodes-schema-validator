@@ -1,0 +1,39 @@
+{
+  "name": "n8n-nodes-schema-validator",
+  "version": "0.1.0",
+  "description": "An n8n community node for validating input data against a configurable schema.",
+  "keywords": ["n8n-community-node-package"],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && npm run copy-icons",
+    "copy-icons": "cp src/nodes/SchemaValidator/schema-validator.svg dist/nodes/SchemaValidator/",
+    "dev": "tsc --watch",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "files": ["dist"],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [],
+    "nodes": ["dist/nodes/SchemaValidator/SchemaValidator.node.js"]
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.0.0",
+    "eslint": "^10.4.0",
+    "jest": "^30.4.2",
+    "n8n-workflow": "^2.16.0",
+    "ts-jest": "^29.4.10",
+    "typescript": "^6.0.0",
+    "typescript-eslint": "^8.60.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": ">=2.0.0"
+  },
+  "dependencies": {
+    "zod": "^4.4.3"
+  }
+}
